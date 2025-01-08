@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,600;1,6..72,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Global */
+
+main {
+    margin: 20px;
+    margin-top: 50px;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family: 'Newsreader', sans-serif;
+    font-style: bold;
+    text-shadow: 2px 1px 6px #0f6e0a;
+    transition: text-shadow 0.3s ease;
+    font-size: 1.8em;
+}
+
+.navbar-brand:hover {
+    text-shadow: 2px 1px 15px #0fa407;
+}
+/* Main */
+
+/* Footer */
+.social-media {
+    margin: 10px;
+}
+.icon-link {
+    display: contents;
+    padding: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #ffffff; /* Default icon color */
+    text-decoration: none;
+    margin: 10px;
+}
+
+.icon-link i {
+    font-size: 20px; /* Icon size */
+    color: inherit; /* Inherit color from link */
+}
+
+/* Hover Effect */
+.icon-link:hover {
+    transform: scale(1.5); /* Scale up on hover */
+}
+
+.icon-link:hover i {
+    color: #b4b4b4; /* Change icon color to white when hovered */
+}
+
+/* Adding some extra spacing between icons */
+.icon-link + .icon-link {
+    margin-left: 15px;
+}
