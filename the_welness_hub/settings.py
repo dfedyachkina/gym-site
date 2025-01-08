@@ -32,7 +32,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     '8000-dfedyachkina-gymsite-yval3q9d3zt.ws.codeinstitute-ide.net',
-    '*herokuapp.com'
+    '.herokuapp.com'
 ]
 
 
