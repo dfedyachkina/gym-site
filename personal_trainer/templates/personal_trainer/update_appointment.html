@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container mt-5">
+    <h1>Update an Appointment</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Update Appointment</button>
+    </form>
+</div>
+{% endblock content %}
+{% block extras %}
+<script>
+    // ensure appointment date is not before "today"
+    let now = new Date(),
+    minDate = now.toISOString().substring(0,10);
+    document.getElementById("id_date").setAttribute("min", minDate);
+</script>
+{% endblock %}

@@ -31,11 +31,28 @@ def create_appointment(request):
     return render(request, template, context)
 
 
-            return redirect('appointment_list')
-    else:
-        form = AppointmentForm()
+@login_required
+def update_appointment(request, id):
+    appointment = get_object_or_404(Appointment, id=id) 
+    if not request.user == appointment.user:
+        messages.error(request, "Access denied, this appointment is not yours")
+        return redirect('appointment_list')
 
-    return render(request, 'personal_trainer/create_appointment.html', {'form': form})
+    form = AppointmentForm(request.POST or None, instance=appointment)
+    if request.method == 'POST':
+        if form.is_valid():
+            form.save() 
+            messages.success(request, "Your appointment has been updated")
+            return redirect('appointment_list')
+
+    template = 'personal_trainer/update_appointment.html'
+    context = {
+        'form': form,
+        'appointment': appointment 
+    }
+    return render(request, template, context)
+
+
 
 def appointment_list(request):
     appointments = Appointment.objects.filter(user=request.user)
