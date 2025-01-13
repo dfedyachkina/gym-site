@@ -53,6 +53,16 @@ def update_appointment(request, id):
     return render(request, template, context)
 
 
+@login_required
+def delete_appointment(request, id):
+    appointment = get_object_or_404(Appointment, id=id) 
+    if not request.user == appointment.user:
+        messages.error(request, "Access denied, this appointment is not yours")
+        return redirect('appointment_list')
+    messages.success(request, "Your appointment has been deleted")
+    appointment.delete()
+    return redirect('appointment_list')
+
 
 def appointment_list(request):
     appointments = Appointment.objects.filter(user=request.user)
