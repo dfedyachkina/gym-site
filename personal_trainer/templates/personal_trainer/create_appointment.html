@@ -3,11 +3,14 @@
 {% block content %}
 
 <div class="container mt-5">
+    {% if is_member %}
     <h1>Create an Appointment</h1>
     <form method="POST">
         {% csrf_token %}
+        {{ form.as_p }}
 
-        <div class="mb-3">
+
+        <!-- <div class="mb-3">
             <label for="date" class="form-label">Date:</label>
             <input type="date" name="date" class="form-control" required>
         </div>
@@ -43,8 +46,20 @@
         <div class="mb-3">
             <label for="notes" class="form-label">Notes:</label>
             <textarea name="notes" class="form-control"></textarea>
-        </div>
+        </div> -->
 
         <button type="submit" class="btn btn-primary">Create Appointment</button>
-
-        {% endblock content %}
+    </form>
+</div>
+{% else %}
+<p>Please consider to be a member to see this form</p>
+{% endif %}
+{% endblock content %}
+{% block extras %}
+<script>
+    // ensure appointment date is not before "today"
+    let now = new Date(),
+    minDate = now.toISOString().substring(0,10);
+    document.getElementById("id_date").setAttribute("min", minDate);
+</script>
+{% endblock %}
