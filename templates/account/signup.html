@@ -11,7 +11,8 @@
 
 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
     {% csrf_token %}
-    <div class="form-group">
+    {{ form.as_p }}
+    <!-- <div class="form-group">
         <label for="{{ form.username.id_for_label }}">Username:</label>
         {{ form.username }}
     </div>
@@ -49,12 +50,12 @@
     <div class="form-group">
         <label for="{{ form.password2.id_for_label }}">Confirm Password:</label>
         {{ form.password2 }}
-    </div>
+    </div> -->
 
     {% if redirect_field_value %}
     <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
     {% endif %}
-    <button type="submit">{% trans "Sign Up" %} &raquo;</button>
+    <button type="submit" class="btn btn-success btn-md">{% trans "Sign Up" %} &raquo;</button>
 </form>
 
 {% endblock content %}
