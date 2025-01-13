@@ -31,7 +31,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get("DEBUG", False)
 ALLOWED_HOSTS = [
     '8000-dfedyachkina-gymsite-yval3q9d3zt.ws.codeinstitute-ide.net',
-    '.herokuapp.com'
+    '.herokuapp.com',
+    '8001-dfedyachkina-gymsite-yval3q9d3zt.ws.codeinstitute-ide.net'
 ]
 
 
@@ -55,6 +56,7 @@ INSTALLED_APPS = [
     'cloudinary', 
     'contact',
     'gym_home',
+    'sign_up',
     'personal_trainer'
 ]
 
@@ -128,6 +130,10 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+# ACCOUNT_SIGNUP_FORM_CLASS = 'sign_up.forms.CustomSignupForm'
 
 
 # Internationalization
