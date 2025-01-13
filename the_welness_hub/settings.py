@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'cloudinary', 
     'contact',
     'gym_home',
+    'personal_trainer'
 ]
 
 SITE_ID = 1
