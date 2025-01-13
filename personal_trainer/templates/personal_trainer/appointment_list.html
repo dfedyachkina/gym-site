@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h1>My Appointments</h1>
+
+{% if appointments %}
+    <ul>
+        {% for appointment in appointments %}
+            <li>{{ appointment.date }} at {{ appointment.time }} ({{ appointment.trainer_gender }})</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>You don't have any appointments yet.</p>
+{% endif %}
+
+{% endblock content %}
