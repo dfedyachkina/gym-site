@@ -22,5 +22,5 @@ urlpatterns = [
     path("", include("gym_home.urls")),
     path('summernote/', include('django_summernote.urls')),
     path("accounts/", include("allauth.urls")),
-    path('create-appointment/', include('personal_trainer.urls')),
+    path('appointments/', include('personal_trainer.urls')),
 ]
