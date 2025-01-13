@@ -53,7 +53,6 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
     'cloudinary_storage',
     'cloudinary', 
-    'blog',
     'contact',
     'gym_home',
 ]
