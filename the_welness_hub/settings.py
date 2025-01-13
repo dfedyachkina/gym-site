@@ -133,6 +133,10 @@ AUTH_PASSWORD_VALIDATORS = [
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
+ACCOUNT_EMAIL_REQUIRED = False
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
 # ACCOUNT_SIGNUP_FORM_CLASS = 'sign_up.forms.CustomSignupForm'
 
 
