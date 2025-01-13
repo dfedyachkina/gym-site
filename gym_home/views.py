@@ -6,3 +6,4 @@ def home(request):
     home_text = HomeText.objects.filter(is_active=True).first()
 
     return render(request, 'gym_home/home.html', {'carousel_images': carousel_images, 'home_text': home_text})
+
