@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <h2 class="text-success">Your membership request has been successfully submitted!</h2>
+  <p>Our administrator will contact you shortly for further instructions.</p>
+  <a href="{% url 'membership' %}" class="btn btn-primary">Back to Memberships</a>
+{% endblock %}
