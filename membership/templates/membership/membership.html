@@ -25,5 +25,39 @@
             </div>
         </div>
     </div>
+    <!-- Modal for Membership Request Confirmation -->
+    <div class="modal fade" id="modal-request-{{membership.id}}" tabindex="-1"
+        aria-labelledby="modal-request-{{membership.id}}-Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-request-{{membership.id}}-Label">Request {{ membership.name }}
+                        Membership</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to request the <strong>{{ membership.name }}</strong> membership?
+                    <p>Price: {{ membership.price }} euro/month</p>
+                    <p><strong>Benefits:</strong><br>
+                        {% for benefit in membership.benefits.all %}
+                        {{ benefit.description | safe }}<br>
+                        {% endfor %}
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <!-- Button to close the modal without action -->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, Go Back</button>
+
+                    <!-- Button that redirects to the membership confirmation view -->
+                    <a href="{% url 'request_membership' membership.id %}" class="btn btn-primary">Yes, Request
+                        Membership</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <p>No memberships available.</p>
+    {% endfor %}
+</div>
 
 {% endblock content %}
