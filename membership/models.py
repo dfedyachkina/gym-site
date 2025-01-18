@@ -13,3 +13,13 @@ class Membership(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Benefit(models.Model):
+    membership = models.ForeignKey(Membership, related_name='benefits', on_delete=models.CASCADE)
+    description = models.TextField()
+
+    def __str__(self):
+        return self.description
+
+
