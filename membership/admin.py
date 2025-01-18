@@ -12,3 +12,5 @@ class BenefitAdmin(SummernoteModelAdmin):
     list_display = ('membership', 'description')
     search_fields = ('membership__name', 'description')
 
+admin.site.register(Membership, MembershipAdmin)
+admin.site.register(Benefit, BenefitAdmin)
