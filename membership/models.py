@@ -1,4 +1,7 @@
 from django.db import models
+from django.contrib.auth.models import User
+from django.utils import timezone
+
 class Membership(models.Model):
     MEMBERSHIP_CHOICES = [
         ('basic', 'Basic Membership'),
@@ -23,3 +26,21 @@ class Benefit(models.Model):
         return self.description
 
 
+class MembershipRequest(models.Model):
+    PENDING = 'pending'
+    APPROVED = 'approved'
+    REJECTED = 'rejected'
+    
+    STATUS_CHOICES = [
+        (PENDING, 'Pending'),
+        (APPROVED, 'Approved'),
+        (REJECTED, 'Rejected'),
+    ]
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    membership = models.ForeignKey(Membership, on_delete=models.CASCADE)
+    request_date = models.DateTimeField(default=timezone.now)
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default=PENDING)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.membership.name} ({self.get_status_display()})"
