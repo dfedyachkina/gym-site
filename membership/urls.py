@@ -3,4 +3,6 @@ from django.urls import path
 
 urlpatterns = [
     path('', views.membership, name='membership'),
+    path('membership/request/<int:membership_id>/', views.request_membership, name='request_membership'),
+    path('membership/success/', views.membership_success, name='membership_success'),
 ]
