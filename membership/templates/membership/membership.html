@@ -2,4 +2,28 @@
 {% load static %}
 {% block content %}
 
+<div class="row">
+    {% for membership in memberships %}
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title text-center text-capitalize">{{ membership.name }} memebership </h5>
+                <p class="card-text">{{ membership.description | safe }}</p>
+
+                <p class="card-text"><strong>Benefits:</strong><br>
+                    {% for benefit in membership.benefits.all %}
+                    {{ benefit.description | safe }}<br>
+                    {% endfor %}
+                </p>
+
+                <p class="card-text">
+                    Price: {{ membership.price }} euro/per month
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-request-{{ membership.id }}">
+                    Request now
+                  </button>
+            </div>
+        </div>
+    </div>
+
 {% endblock content %}
