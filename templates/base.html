@@ -3,6 +3,7 @@
 {% url 'home' as home_url %}
 {% url 'create_appointment' as appointment_url %}
 {% url 'membership' as membership_url %}
+{% url 'contact' as contact_url %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
@@ -43,7 +44,7 @@
                     </li>
                     {% endif %}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="{{ contact_url }}">Contact Us</a>
                     </li>
                 </ul>
                 <span class="navbar-text">
