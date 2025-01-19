@@ -59,7 +59,6 @@ INSTALLED_APPS = [
     'accounts',
     'personal_trainer',
     'membership'
-
 ]
 
 SITE_ID = 1
