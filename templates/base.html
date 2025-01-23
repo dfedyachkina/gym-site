@@ -38,7 +38,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ membership_url }}">Membership</a>
                     </li>
-                    {% if user.is_authenticated and user.member.approved %}
+                    {% if request.user.is_authenticated and is_member %}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ appointment_url }}">Book an appointment</a>
                     </li>
