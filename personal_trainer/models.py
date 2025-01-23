@@ -2,14 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-class Member(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="member")
-    approved = models.BooleanField(default=False)
-
-    def __str__(self):
-        return f"{self.user.username} - {'Approved' if self.approved else 'Pending'}"
-
-
 class Appointment(models.Model):
     TIME_CHOICES = [
         ("10:00", "10:00"),
