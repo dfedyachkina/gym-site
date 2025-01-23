@@ -101,3 +101,11 @@
 .icon-link + .icon-link {
     margin-left: 15px;
 }
+
+@media screen and (max-width: 400px) {
+    .navbar-brand {
+        font-size: 1.5em;
+    }
+    
+}
+
