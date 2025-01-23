@@ -5,10 +5,14 @@
 <h1>My Appointments</h1>
 
 {% if appointments %}
+{% now "Ymd" as today %}
 <ul>
-    {% for appointment in appointments %}
+    {% for appointment in appointments|dictsort:"date" reversed %}
     <li>
         {{ appointment.date }} at {{ appointment.time }} ({{ appointment.trainer_gender }})
+        {% if appointment.date|date:"Ymd" < today %}
+        Appointment in the past
+        {% else %}
         <a href="{% url 'update_appointment' appointment.id %}" class="text-primary">Edit</a>
         <a href="" class="text-danger" data-bs-toggle="modal" data-bs-target="#modal-delete-{{appointment.id}}">
             Delete
@@ -32,6 +36,7 @@
                 </div>
             </div>
         </div>
+        {% endif %}
     </li>
     {% endfor %}
 </ul>
