@@ -32,7 +32,8 @@ DEBUG = os.environ.get("DEBUG", False)
 ALLOWED_HOSTS = [
     '8000-dfedyachkina-gymsite-yval3q9d3zt.ws.codeinstitute-ide.net',
     '.herokuapp.com',
-    '8001-dfedyachkina-gymsite-yval3q9d3zt.ws.codeinstitute-ide.net'
+    '8001-dfedyachkina-gymsite-yval3q9d3zt.ws.codeinstitute-ide.net',
+    'ui.dev'
 ]
 
 
