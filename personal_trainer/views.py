@@ -2,12 +2,13 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .forms import AppointmentForm
-from .models import Appointment, Member
+from .models import Appointment
+from membership.models import MembershipRequest
 
 
 @login_required
 def create_appointment(request):
-    if not Member.objects.filter(user=request.user, approved=True).exists():
+    if not MembershipRequest.objects.filter(user=request.user, status='approved' ).exists():
         messages.error(request, "You must be a member to make an appointment")
         is_member = False
     else:
