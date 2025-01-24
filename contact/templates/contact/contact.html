@@ -13,8 +13,7 @@
     <div class="col-lg-6 mx-auto">
       <h3 class="mb-3">Our Contact Information:</h3>
       <ul class="list-unstyled">
-        <li><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> <a href="mailto:{{ gym_email }}">{{ gym_email
-            }}</a></li>
+        <li><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> <a href="mailto:{{ gym_email }}">{{ gym_email }}</a></li>
         <li><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> {{ gym_phone_number }}</li>
       </ul>
     </div>
@@ -66,14 +65,6 @@
     </div>
   </div>
   </form>
-
-  {% if messages %}
-  <div class="alert alert-success mt-3">
-    {% for message in messages %}
-    <p>{{ message }}</p>
-    {% endfor %}
-  </div>
-  {% endif %}
 </div>
 
 {% endblock content %}
