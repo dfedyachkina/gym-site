@@ -4,5 +4,5 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.ustom_404, name='error404'),
+    path('', views.custom_404, name='error404'),
 ]
