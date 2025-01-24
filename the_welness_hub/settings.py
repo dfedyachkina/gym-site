@@ -33,7 +33,8 @@ ALLOWED_HOSTS = [
     '8000-dfedyachkina-gymsite-yval3q9d3zt.ws.codeinstitute-ide.net',
     '.herokuapp.com',
     '8001-dfedyachkina-gymsite-yval3q9d3zt.ws.codeinstitute-ide.net',
-    'ui.dev/amiresponsive?url=https://the-welness-hub-9673efabce1f.herokuapp.com'
+    'ui.dev/amiresponsive?url=https://the-welness-hub-9673efabce1f.herokuapp.com',
+    '*'
 ]
 
 
