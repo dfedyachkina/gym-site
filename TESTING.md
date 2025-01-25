@@ -83,3 +83,27 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | the_welness_hub | [urls.py](https://github.com/dfedyachkina/gym-site/blob/main/the_welness_hub/urls.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dfedyachkina/gym-site/main/the_welness_hub/urls.py) | ![screenshot](documentation/validation/py-the_welness_hub-urls.png) | N/A |
 
 
+## Responsiveness
+
+I've tested my deployed project to check for responsiveness issues.
+
+| Page | Mobile | Tablet | Desktop | Notes |
+| --- | --- | --- | --- | --- |
+| Register | ![screenshot](documentation/responsiveness/mobile-register.png) | ![screenshot](documentation/responsiveness/tablet-register.png) | ![screenshot](documentation/responsiveness/desktop-register.png) | Works as expected |
+| Login | ![screenshot](documentation/responsiveness/mobile-login.png) | ![screenshot](documentation/responsiveness/tablet-login.png) | ![screenshot](documentation/responsiveness/desktop-login.png) | Works as expected |
+| Log out | ![screenshot](documentation/responsiveness/mobile-logout.png) | ![screenshot](documentation/responsiveness/tablet-logout.png) | ![screenshot](documentation/responsiveness/desktop-logout.png) | Works as expected |
+| Home | ![screenshot](documentation/responsiveness/mobile-home.png) | ![screenshot](documentation/responsiveness/tablet-home.png) | ![screenshot](documentation/responsiveness/desktop-home.png) | Works as expected |
+| Membership | ![screenshot](documentation/responsiveness/mobile-membership.png) | ![screenshot](documentation/responsiveness/tablet-membership.png) | ![screenshot](documentation/responsiveness/desktop-membership.png) | Works as expected |
+| Request membership | ![screenshot](documentation/responsiveness/mobile-request-membership.png) | ![screenshot](documentation/responsiveness/tablet-request-membership.png) | ![screenshot](documentation/responsiveness/desktop-request-membership.png) | Works as expected |
+| Success message of requesting membership | ![screenshot](documentation/responsiveness/mobile-success-membership.png) | ![screenshot](documentation/responsiveness/tablet-success-membership.png) | ![screenshot](documentation/responsiveness/desktop-success-membership.png) | Works as expected |
+| Book an appointment | ![screenshot](documentation/responsiveness/mobile-book-appointment.png) | ![screenshot](documentation/responsiveness/tablet-book-appointment.png) | ![screenshot](documentation/responsiveness/desktop-book-appointment.png) | Works as expected |
+| My appointments| ![screenshot](documentation/responsiveness/mobile-my-appointments.png) | ![screenshot](documentation/responsiveness/tablet-my-appointments.png) | ![screenshot](documentation/responsiveness/desktop-my-appointments.png) | Works as expected |
+| Update appointment | ![screenshot](documentation/responsiveness/mobile-update-appointment.png) | ![screenshot](documentation/responsiveness/tablet-update-appointment.png) | ![screenshot](documentation/responsiveness/desktop-update-appointment.png) | Works as expected |
+| Success message of updating appoinment | ![screenshot](documentation/responsiveness/mobile-success-update-appointment.png) | ![screenshot](documentation/responsiveness/tablet-success-update-appointment.png) | ![screenshot](documentation/responsiveness/desktop-success-update-appointment.png) | Works as expected |
+| Delete appointment | ![screenshot](documentation/responsiveness/mobile-delete-appointment.png) | ![screenshot](documentation/responsiveness/tablet-delete-appointment.png) | ![screenshot](documentation/responsiveness/desktop-delete-appointment.png) | Works as expected |
+| Success of deleting appointment | ![screenshot](documentation/responsiveness/mobile-success-delete-appointment.png) | ![screenshot](documentation/responsiveness/tablet-success-delete-appointment.png) | ![screenshot](documentation/responsiveness/desktop-success-delete-appointment.png) | Works as expected |
+| Contact Us | ![screenshot](documentation/responsiveness/mobile-contact.png) | ![screenshot](documentation/responsiveness/tablet-contact.png) | ![screenshot](documentation/responsiveness/desktop-contact.png) | Works as expected |
+| Success message of submitting contact form | ![screenshot](documentation/responsiveness/mobile-success-contact.png) | ![screenshot](documentation/responsiveness/tablet-success-contact.png) | ![screenshot](documentation/responsiveness/desktop-success-contact.png) | Works as expected |
+| 404 | ![screenshot](documentation/responsiveness/mobile-404.png) | ![screenshot](documentation/responsiveness/tablet-404.png) | ![screenshot](documentation/responsiveness/desktop-404.png) | Works as expected |
+
+
