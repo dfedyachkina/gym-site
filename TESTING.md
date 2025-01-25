@@ -131,4 +131,22 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | 404 | ![screenshot](documentation/browsers/chrome-404.png) | ![screenshot](documentation/browsers/mozilla-404.png) | ![screenshot](documentation/browsers/edge-404.png) | Works as expected |
 
 
+## Lighthouse Audit
+
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues. Some warnings are outside of my control, and mobile results tend to be lower than desktop.
+
+| Page | Mobile | Desktop |
+| --- | --- | --- |
+| Register | ![screenshot](documentation/lighthouse/mobile-register.png) | ![screenshot](documentation/lighthouse/desktop-register.png) |
+| Login | ![screenshot](documentation/lighthouse/mobile-login.png) | ![screenshot](documentation/lighthouse/desktop-login.png) |
+| Logout | ![screenshot](documentation/lighthouse/mobile-logout.png) | ![screenshot](documentation/lighthouse/desktop-logout.png) |
+| Home | ![screenshot](documentation/lighthouse/mobile-home.png) | ![screenshot](documentation/lighthouse/desktop-home.png) |
+| Memebership | ![screenshot](documentation/lighthouse/mobile-membership.png) | ![screenshot](documentation/lighthouse/desktop-membership.png) |
+| Success request membership | ![screenshot](documentation/lighthouse/mobile-success-membership.png) | ![screenshot](documentation/lighthouse/desktop-success-membership.png) |
+| Book an appointment | ![screenshot](documentation/lighthouse/mobile-book-appointment.png) | ![screenshot](documentation/lighthouse/desktop-book-appointment.png) |
+| My appointments | ![screenshot](documentation/lighthouse/mobile-my-appointments.png) | ![screenshot](documentation/lighthouse/desktop-my-appointments.png) |
+| Update appointment | ![screenshot](documentation/lighthouse/mobile-update-appointment.png) | ![screenshot](documentation/lighthouse/desktop-update-appointment.png) |
+| Contact Us | ![screenshot](documentation/lighthouse/mobile-contact.png) | ![screenshot](documentation/lighthouse/desktop-contact.png) |
+| 404 | ![screenshot](documentation/lighthouse/mobile-404) | ![screenshot](documentation/lighthouse/desktop-404) |
+
 
