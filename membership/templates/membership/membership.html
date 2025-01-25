@@ -35,7 +35,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Are you sure you want to request the <p class="fw-bold">{{ membership.name }}</p> membership?<br>
+                    Are you sure you want to request the {{ membership.name }} membership?<br>
                     Price: {{ membership.price }} euro/month<br>
                     <p class="fw-bold">Benefits:</p><br>
                         {% for benefit in membership.benefits.all %}
