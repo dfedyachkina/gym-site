@@ -8,7 +8,7 @@ from membership.models import MembershipRequest
 
 @login_required
 def create_appointment(request):
-    if not MembershipRequest.objects.filter(user=request.user, status='approved' ).exists():
+    if not MembershipRequest.objects.filter(user=request.user, status='approved').exists():  # noqa
         messages.error(request, "You must be a member to make an appointment")
         is_member = False
     else:
@@ -19,7 +19,7 @@ def create_appointment(request):
                 appointment = form.save(commit=False)
                 appointment.user = request.user
                 appointment.is_member = True
-                appointment.save() 
+                appointment.save()
                 messages.success(request, "Your appointment has been done")
                 return redirect('appointment_list')
     form = AppointmentForm()
@@ -34,7 +34,7 @@ def create_appointment(request):
 
 @login_required
 def update_appointment(request, id):
-    appointment = get_object_or_404(Appointment, id=id) 
+    appointment = get_object_or_404(Appointment, id=id)
     if not request.user == appointment.user:
         messages.error(request, "Access denied, this appointment is not yours")
         return redirect('appointment_list')
@@ -42,21 +42,21 @@ def update_appointment(request, id):
     form = AppointmentForm(request.POST or None, instance=appointment)
     if request.method == 'POST':
         if form.is_valid():
-            form.save() 
+            form.save()
             messages.success(request, "Your appointment has been updated")
             return redirect('appointment_list')
 
     template = 'personal_trainer/update_appointment.html'
     context = {
         'form': form,
-        'appointment': appointment 
+        'appointment': appointment
     }
     return render(request, template, context)
 
 
 @login_required
 def delete_appointment(request, id):
-    appointment = get_object_or_404(Appointment, id=id) 
+    appointment = get_object_or_404(Appointment, id=id)
     if not request.user == appointment.user:
         messages.error(request, "Access denied, this appointment is not yours")
         return redirect('appointment_list')
@@ -67,4 +67,4 @@ def delete_appointment(request, id):
 
 def appointment_list(request):
     appointments = Appointment.objects.filter(user=request.user)
-    return render(request, 'personal_trainer/appointment_list.html', {'appointments': appointments})
+    return render(request, 'personal_trainer/appointment_list.html', {'appointments': appointments})  # noqa

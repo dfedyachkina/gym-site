@@ -20,12 +20,12 @@ class Appointment(models.Model):
         ("Doesn't Matter", "Doesn't Matter"),
     ]
 
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="bookings")
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="bookings")  # noqa
     date = models.DateField(null=False, blank=False)
-    time = models.CharField(max_length=5, choices=TIME_CHOICES, null=False, blank=False)
-    trainer_gender = models.CharField(max_length=15, choices=TRAINER_GENDER_CHOICES, default="Doesn't Matter")
+    time = models.CharField(max_length=5, choices=TIME_CHOICES, null=False, blank=False)  # noqa
+    trainer_gender = models.CharField(max_length=15, choices=TRAINER_GENDER_CHOICES, default="Doesn't Matter")  # noqa
     is_member = models.BooleanField(default=False)
     notes = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        return f"Booking for {self.user.username} on {self.date} at {self.time}"
+        return f"Booking for {self.user.username} on {self.date} at {self.time}"  # noqa
