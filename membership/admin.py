@@ -4,7 +4,7 @@ from .models import Membership, Benefit, MembershipRequest
 
 
 class MembershipAdmin(SummernoteModelAdmin):
-    list_display = ('name', 'price', 'description', 'image')  
+    list_display = ('name', 'price', 'description', 'image')
     search_fields = ('name', 'description')
 
 
@@ -12,8 +12,9 @@ class BenefitAdmin(SummernoteModelAdmin):
     list_display = ('membership', 'description')
     search_fields = ('membership__name', 'description')
 
+
 class MembershipRequestAdmin(admin.ModelAdmin):
-    list_display = ('user', 'membership', 'request_date', 'status', 'approved_date')
+    list_display = ('user', 'membership', 'request_date', 'status', 'approved_date')  # noqa
     list_filter = ('status', 'membership', 'request_date')
     actions = ['approve_requests', 'reject_requests']
 
