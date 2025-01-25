@@ -106,4 +106,29 @@ I've tested my deployed project to check for responsiveness issues.
 | Success message of submitting contact form | ![screenshot](documentation/responsiveness/mobile-success-contact.png) | ![screenshot](documentation/responsiveness/tablet-success-contact.png) | ![screenshot](documentation/responsiveness/desktop-success-contact.png) | Works as expected |
 | 404 | ![screenshot](documentation/responsiveness/mobile-404.png) | ![screenshot](documentation/responsiveness/tablet-404.png) | ![screenshot](documentation/responsiveness/desktop-404.png) | Works as expected |
 
+## Browser Compatibility
+
+
+I've tested my deployed project on multiple browsers to check for compatibility issues.
+
+| Page | Chrome | Firefox | Edge | Notes |
+| --- | --- | --- | --- | --- |
+| Register | ![screenshot](documentation/browsers/chrome-register.png) | ![screenshot](documentation/browsers/mozilla-register.png) | ![screenshot](documentation/browsers/edge-register.png) | Works as expected |
+| Login | ![screenshot](documentation/browsers/chrome-login.png) | ![screenshot](documentation/browsers/mozilla-login.png) | ![screenshot](documentation/browsers/edge-login.png) | Works as expected |
+| Log out | ![screenshot](documentation/browsers/chrome-logout.png) | ![screenshot](documentation/browsers/mozilla-logout.png) | ![screenshot](documentation/browsers/edge-logout.png) | Works as expected |
+| Home | ![screenshot](documentation/browsers/chrome-home.png) | ![screenshot](documentation/browsers/mozilla-home.png) | ![screenshot](documentation/browsers/edge-home.png) | Works as expected |
+| Membership | ![screenshot](documentation/browsers/chrome-membership.png) | ![screenshot](documentation/browsers/mozilla-membership.png) | ![screenshot](documentation/browsers/edge-membership.png) | Works as expected |
+| Request membership | ![screenshot](documentation/browsers/chrome-request-membership.png) | ![screenshot](documentation/browsers/mozilla-request-membership.png) | ![screenshot](documentation/browsers/edge-request-membership.png) | Works as expected |
+| Success message of requesting membership | ![screenshot](documentation/browsers/chrome-success-membership.png) | ![screenshot](documentation/browsers/mozilla-success-membership.png) | ![screenshot](documentation/browsers/edge-success-membership.png)| Works as expected |
+| Book an appointment |![screenshot](documentation/browsers/chrome-book-appointment.png) | ![screenshot](documentation/browsers/mozilla-book-appointment.png) | ![screenshot](documentation/browsers/edge-book-appointment.png) | Works as expected |
+| My appointments|![screenshot](documentation/browsers/chrome-my-appointments.png) | ![screenshot](documentation/browsers/mozilla-my-appointments.png) | ![screenshot](documentation/browsers/edge-my-appointments.png) | Works as expected |
+| Update appointment |![screenshot](documentation/browsers/chrome-update-appointment.png) | ![screenshot](documentation/browsers/mozilla-update-appointment.png) | ![screenshot](documentation/browsers/edge-update-appointment.png) | Works as expected |
+| Success message of updating appoinment | ![screenshot](documentation/browsers/chrome-success-update-appointment.png) | ![screenshot](documentation/browsers/mozilla-success-update-appointment.png) | ![screenshot](documentation/browsers/edge-success-update-appointment.png) | Works as expected |
+| Delete appointment | ![screenshot](documentation/browsers/chrome-delete-appointment.png) | ![screenshot](documentation/browsers/mozilla-delete-appointment.png) | ![screenshot](documentation/browsers/edge-delete-appointment.png) | Works as expected |
+| Success of deleting appointment| ![screenshot](documentation/browsers/chrome-success-delete-appointment.png) | ![screenshot](documentation/browsers/mozilla-success-delete-appointment.png) | ![screenshot](documentation/browsers/edge-success-delete-appointment.png) | Works as expected |
+| Contact Us | ![screenshot](documentation/browsers/chrome-contact.png) | ![screenshot](documentation/browsers/mozilla-contact.png) | ![screenshot](documentation/browsers/edge-contact.png) | Works as expected |
+| Success message of submitting contact form |![screenshot](documentation/browsers/chrome-success-contact.png) | ![screenshot](documentation/browsers/mozilla-success-contact.png) | ![screenshot](documentation/browsers/edge-success-contact.png) | Works as expected |
+| 404 | ![screenshot](documentation/browsers/chrome-404.png) | ![screenshot](documentation/browsers/mozilla-404.png) | ![screenshot](documentation/browsers/edge-404.png) | Works as expected |
+
+
 
