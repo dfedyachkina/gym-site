@@ -5,8 +5,8 @@ from allauth.account.forms import SignupForm
 class CustomSignupForm(SignupForm):
     first_name = forms.CharField(max_length=30, required=True)
     last_name = forms.CharField(max_length=30, required=True)
-    date_of_birth = forms.DateField(required=True, widget=forms.DateInput(attrs={'type': 'date'})) # noqa
-    gender = forms.ChoiceField(choices=[('M', 'Male'), ('F', 'Female'), ('O', 'Other')], required=True) # noqa
+    date_of_birth = forms.DateField(required=True, widget=forms.DateInput(attrs={'type': 'date'}))  # noqa
+    gender = forms.ChoiceField(choices=[('M', 'Male'), ('F', 'Female'), ('O', 'Other')], required=True)  # noqa
 
     def save(self, request):
         user = super().save(request)
