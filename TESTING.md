@@ -183,4 +183,27 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Feature is expected to allow guest user submit contact us form | Submitted contact us form | The form has been submitted successfully | ![screenshot](documentation/defensive/guest-contact-submit.png) |
 | 404 Error Page | Feature is expected to display a 404 error page for non-existent pages. | Navigated to an invalid URL. | A custom 404 error page was displayed as expected. | ![screenshot](documentation/defensive/404.png) |
 
+## User Story Testing
+
+
+| Target | Expectation | Outcome | Screenshot |
+| --- | --- | --- | --- |
+| As a gym admin | I would like to manage images of carousel | so that I can keep updated images. | ![screenshot](documentation/features/admin-carousel.png) |
+| As a gym admin | I would like to manage home text | so that I can keep updated information on home page. | ![screenshot](documentation/features/admin-home-text.png) |
+| As a gym admin | I would like to manage memebrships | so that I can keep updated memebrships, delete outdated and add new ones. | ![screenshot](documentation/features/admin-membership.png) |
+| As a gym admin | I would like to manage status of mebership's requests | so that I can manage who has memeberhsip and who doesn't. | ![screenshot](documentation/features/admin-membership-requests.png) |
+| As a gym admin | I would like to edit gym's contacts | so that I can keep updated contact of the gym. | ![screenshot](documentation/features/admin-gym-contacts.png) |
+| As a gym admin | I would like to view contact's requests | so that I can see who would like to be contacted and his request. | ![screenshot](documentation/features/admin-view-contact-forms.png) |
+| As a registered member user | I would like to have access to book an appointment | so that I can schedule my workout with the personal trainer. | ![screenshot](documentation/features/book-appointment.png) |
+| As a registered member user | I would like to have access to my appointment list | so that I can manage my appointments. | ![screenshot](documentation/features/my_appointments.png) |
+| As a registered non-member user | I would like to request membership | so that I can request to be a member of the gym. | ![screenshot](documentation/features/success-message-membership.png) |
+| As a guest user | I would like to log in to the site | so that I can have additional access to gym's sources. | ![screenshot](documentation/features/login.png) |
+| As a guest user  | I would like to register for an account | so that I can become part of the gym and have additional access to gym's sources. | ![screenshot](documentation/features/register.png) |
+| As a guest user | I would like to view home page | so that I can see what includes to this gym and to get more known about this gym.| ![screenshot](documentation/features/home.png) |
+| As a guest user | I would like to view offered memberships | so that others can see who I see the prices and what includes there. | ![screenshot](documentation/features/membership.png) |
+| As a guest user | I would like to view gym contacts and contact us form | so that I may know how I can contact gym's staff | ![screenshot](documentation/features/contact-us.png) |
+| As a guest user | I would like to submit contact form | so that I can let the gym know that I want to be contacted by them.| ![screenshot](documentation/features/success-message-contact-us-form.png) |
+| As a guest user | I would like to read blog posts without registering | so that I can enjoy the content without needing to log in. | ![screenshot](documentation/features/feature16.png) |
+| As a user | I would like to see a 404 error page if I get lost | so that it's obvious that I've stumbled upon a page that doesn't exist. | ![screenshot](documentation/features/404.png) |
+
 
