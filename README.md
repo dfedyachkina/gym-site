@@ -124,4 +124,22 @@ I used [coolors.co](https://coolors.co/080708-3772ff-df2935-fdca40-e6e8e6) to ge
 | As a guest user| I would like to register an account | so that I can request memebership and become a member. |
 | As a guest user | I would like to log in with exicted account | so that I can log in to my exicted account and have additional access. |
 
+## Wireframes
+
+
+To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
+I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+
+| Page | Mobile | Tablet | Desktop |
+| --- | --- | --- | --- |
+| Register | ![screenshot](documentation/wireframes/mobile-register.png) | ![screenshot](documentation/wireframes/tablet-register.png) | ![screenshot](documentation/wireframes/desktop-register.png) |
+| Login | ![screenshot](documentation/wireframes/mobile-login.png) | ![screenshot](documentation/wireframes/tablet-login.png) | ![screenshot](documentation/wireframes/desktop-login.png) |
+| Sign Out | ![screenshot](documentation/wireframes/mobile-sign-out.png) | ![screenshot](documentation/wireframes/tablet-sign-out.png) | ![screenshot](documentation/wireframes/desktop-sign-out.png) |
+| Home | ![screenshot](documentation/wireframes/mobile-home.png) | ![screenshot](documentation/wireframes/tablet-home.png) | ![screenshot](documentation/wireframes/desktop-home.png) |
+| Membership | ![screenshot](documentation/wireframes/mobile-membership.png) | ![screenshot](documentation/wireframes/tablet-membership.png) | ![screenshot](documentation/wireframes/desktop-membership.png) |
+| Book an appointment | ![screenshot](documentation/wireframes/mobile-book-appointment.png) | ![screenshot](documentation/wireframes/tablet-book-appointment.png) | ![screenshot](documentation/wireframes/desktop-book-appointment.png) |
+| My appointments | ![screenshot](documentation/wireframes/mobile-my-appointments.png) | ![screenshot](documentation/wireframes/tablet-my-appointments.png) | ![screenshot](documentation/wireframes/desktop-my-appointments.png) |
+| Contact Us | ![screenshot](documentation/wireframes/mobile-contact-us.png) | ![screenshot](documentation/wireframes/tablet-contact-us.png) | ![screenshot](documentation/wireframes/desktop-contact-us.png) |
+| 404 | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
+
 
