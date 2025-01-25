@@ -54,21 +54,26 @@
                 </ul>
                 <span class="navbar-text">
                     {% if user.is_authenticated %}
+                    <span class="navbar-text">
                         <span class="d-flex align-items-center">
-                            <li class="mb-0 mr-3">Hi, {{ user.username }}!</li>
-                            <a class="nav-link {% if request.path == logout_url %}active{% endif %}" href="{% url 'account_logout' %}" aria-current="page">
+                            <span class="mb-0 mr-3">Hi, gym_admin!</span>
+                            <a class="nav-link" href="/accounts/logout/" aria-current="page">
                                 Logout
                             </a>
                         </span>
+                    </span>
+
                     {% else %}
-                        <span class="d-flex">
-                            <a class="nav-link {% if request.path == signup_url %}active{% endif %}" href="{% url 'account_signup' %}" aria-current="page">
-                                Register
-                            </a>
-                            <a class="nav-link {% if request.path == login_url %}active{% endif %}" href="{% url 'account_login' %}" aria-current="page">
-                                Login
-                            </a>
-                        </span>
+                    <span class="d-flex">
+                        <a class="nav-link {% if request.path == signup_url %}active{% endif %}"
+                            href="{% url 'account_signup' %}" aria-current="page">
+                            Register
+                        </a>
+                        <a class="nav-link {% if request.path == login_url %}active{% endif %}"
+                            href="{% url 'account_login' %}" aria-current="page">
+                            Login
+                        </a>
+                    </span>
                     {% endif %}
                 </span>
             </div>
@@ -78,10 +83,12 @@
     {% if messages %}
     <section id="alerts">
         {% for msg in messages %}
-            <!-- all django message tags mirror bootstrap, except error/danger -->
-            <aside class="alert {% if msg.tags == 'error' %}alert-danger{% else %}alert-{{ msg.tags }}{% endif %} text-center" role="alert">
-                <h3>{{ msg }}</h3>
-            </aside>
+        <!-- all django message tags mirror bootstrap, except error/danger -->
+        <aside
+            class="alert {% if msg.tags == 'error' %}alert-danger{% else %}alert-{{ msg.tags }}{% endif %} text-center"
+            role="alert">
+            <h3>{{ msg }}</h3>
+        </aside>
         {% endfor %}
     </section>
     {% endif %}
@@ -100,16 +107,20 @@
         </p>
         <div class="social-media">
             <p class="m-0 text-center text-white">Follow us:
-                <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" class="icon-link icon-link-hover">
+                <a href="http://facebook.com" target="_blank" rel="noopener noreferrer"
+                    class="icon-link icon-link-hover">
                     <i class="fa-brands fa-facebook ms-3"></i>
                 </a>
-                <a href="http://twitter.com" target="_blank" rel="noopener noreferrer" class="icon-link icon-link-hover">
+                <a href="http://twitter.com" target="_blank" rel="noopener noreferrer"
+                    class="icon-link icon-link-hover">
                     <i class="fa-brands fa-twitter ms-3"></i>
                 </a>
-                <a href="http://instagram.com" target="_blank" rel="noopener noreferrer" class="icon-link icon-link-hover">
+                <a href="http://instagram.com" target="_blank" rel="noopener noreferrer"
+                    class="icon-link icon-link-hover">
                     <i class="fa-brands fa-instagram ms-3"></i>
                 </a>
-                <a href="http://youtube.com" target="_blank" rel="noopener noreferrer" class="icon-link icon-link-hover">
+                <a href="http://youtube.com" target="_blank" rel="noopener noreferrer"
+                    class="icon-link icon-link-hover">
                     <i class="fa-brands fa-youtube ms-3"></i>
                 </a>
             </p>
