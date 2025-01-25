@@ -149,4 +149,38 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Contact Us | ![screenshot](documentation/lighthouse/mobile-contact.png) | ![screenshot](documentation/lighthouse/desktop-contact.png) |
 | 404 | ![screenshot](documentation/lighthouse/mobile-404) | ![screenshot](documentation/lighthouse/desktop-404) |
 
+## Defensive Programming
+
+Defensive programming was manually tested with the below user acceptance testing:
+
+| Page | Expectation | Test | Result | Screenshot |
+| --- | --- | --- | --- | --- |
+| Home management | Feature is expected to allow the gym admin edit photo in carousel images from the Django admin dashboard.  | Edited first image | Image was updated successfully | ![screenshot](documentation/defensive/change-image-carousel.png) |
+| | Feature is expected to allow the gym admin to delete an image in carousel Django admin dashboard. | Deleted in Django admin. | Image was delted successfully | ![screenshot](documentation/defensive/delete-image-carousel.png) |
+| | Feature is expected to allow the gym admin to add an image in carousel Django admin dashboard. | Add an image in carousel | The image has been added successfullly,  | ![screenshot](documentation/defensive/add-image-carousel.png) |
+| | Feature is expected to allow the gym admin to manage home text from the Django admin dashboard. | Edited, added, and deleted home text in Django admin. | Changes were saved and displayed correctly. | ![screenshot](documentation/defensive/home-text-edit.png) |
+| Memberships management| Feature is expected to allow the gym admin add a new mebership | Add a new membership | New memebership has been added| ![screenshot](documentation/defensive/add-memebership.png) |
+| | Feature is expected to allow the gym admin change a membership | Changed a membership | Memebership has been changed| ![screenshot](documentation/defensive/edit-memebership.png) |
+| | Feature is expected to allow the gym admin delete a membership | Deleted a membership | Memebership has been deleted| ![screenshot](documentation/defensive/delete-memebership.png) |
+| | Feature is expected to allow the gym admin add benefits| Added a benefit | Benefit has been added successfully | ![screenshot](documentation/defensive/add-benefit.png) |
+| | Feature is expected to allow the gym admin update benefits| Changed a benefit | Benefit has been changed successfully | ![screenshot](documentation/defensive/change-benefit.png) |
+| | Feature is expected to allow the gym admin delete benefits| Deleted a benefit | Benefit has been deleted successfully | ![screenshot](documentation/defensive/delete-benefit.png) |
+| | Feature is expected to allow the gym admin to approve requset memebrship | Approved membership's request | Request has been approved | ![screenshot](documentation/defensive/manage-mebership-requests.png) |
+| | Feature is expected to allow the gym admin to reject requset memebrship | Rejected membership's request | Request has been rejected| ![screenshot](documentation/defensive/manage-mebership-requests.png) |
+| | Feature is expected to allow the gym admin to put on pending requset memebrship | Putted on pending membership's request | Request has been putted on pending| ![screenshot](documentation/defensive/manage-mebership-requests.png) |
+| User Authentication | Feature is expected to allow registered users to log in to the site. | Attempted to log in with valid and invalid credentials. | Login was successful with valid credentials; invalid credentials were rejected. | ![screenshot](documentation/defensive/sign-in.png) |
+| | Feature is expected to allow users to register for an account. | Registered a new user with unique credentials. | User account was created successfully. | ![screenshot](documentation/defensive/sign_up.png) |
+| | Feature is expected to allow users to log out securely. | Logged out and tried accessing a restricted page. | Access was denied after logout, as expected. | ![screenshot](documentation/defensive/sign-out.png) |
+| View contacts forms | Feature is expected to allow gym admin should be able to view all submitted contact forms in Django administration dashboard. | Went to contacts form | From admin account contacts forms are visiable. | ![screenshot](documentation/defensive/contact-request.png) |
+| Manage gym contacts| Feature is expected to allow gym admin to change gym contacts on contact us page from Django administration dashboard | Changed contacts | Changed contact are displayed | ![screenshot](documentation/defensive/change-gym-contacts.png) |
+| Appointment management| Feature is expected to allow registered member users to add an appointment | Created appointment | Appointment has been created | ![screenshot](documentation/defensive/chrome-success-appointment.png) |
+| | Feature is expected to allow registered member users to update an appointment | Updated appointment | Appointment has been updated | ![screenshot](documentation/defensive/chrome-success-update-appointment.png) |
+| | Feature is expected to allow registered member users to delete an appointment | Deleted appointment | Appointment has been deleted| ![screenshot](documentation/defensive/chrome-success-delete-appointment.png) |
+| Request membership | Feature is expected to allow registred users to request membership. | Requested a membership | Memebership has been requested successfully | ![screenshot](documentation/defensive/success-message-membership.png) |
+| Guest features | Feature is expected to display carousel and gym's information on home page | Opened home page from unauthenticated user | The home page has been displayed correctly | ![screenshot](documentation/defensive/quest-home.png) |
+| | Feature is expected to allow guest user to browse memeberships | Opened membership page from unauthenticated user | Membership has been opened successfully | ![screenshot](documentation/defensive/guest-membership.png) |
+| | Feature is expected to allow guest user to browse contact us | Opened contact us page from unauthenticated user | Contact us has been opened successfully | ![screenshot](documentation/defensive/guest-contact.png) |
+| | Feature is expected to allow guest user submit contact us form | Submitted contact us form | The form has been submitted successfully | ![screenshot](documentation/defensive/guest-contact-submit.png) |
+| 404 Error Page | Feature is expected to display a 404 error page for non-existent pages. | Navigated to an invalid URL. | A custom 404 error page was displayed as expected. | ![screenshot](documentation/defensive/404.png) |
+
 
