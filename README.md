@@ -142,4 +142,47 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Contact Us | ![screenshot](documentation/wireframes/mobile-contact-us.png) | ![screenshot](documentation/wireframes/tablet-contact-us.png) | ![screenshot](documentation/wireframes/desktop-contact-us.png) |
 | 404 | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 
+## Features
+       
+### Existing Features
+
+| Feature | Notes | Screenshot |
+| --- | --- | --- |
+| Navbar | Users can navigate between pages, log in, register and log out from an account | ![screenshot](documentation/features/navbar.png) |
+| Register | Authentication is handled by allauth, allowing users to register accounts. | ![screenshot](documentation/features/register.png) |
+| Login | Authentication is handled by allauth, allowing users to log in to their existing accounts. | ![screenshot](documentation/features/login.png) |
+| Logout | Authentication is handled by allauth, allowing users to log out of their accounts. | ![screenshot](documentation/features/logout.png) |
+| Home | The homepage displays carousle of images and gym's information. | ![screenshot](documentation/features/home.png) |
+| Membership| Users can view all offered memeberships | ![screenshot](documentation/features/membership.png) |
+| Request memebership | When user requests memebership he gets the poup with confirmation | ![screenshot](documentation/features/popup-memebership.png) |
+| Success message of requested membership | The success message appers when the user requested a mebership | ![screenshot](documentation/features/success-message-membership.png) |
+| Book an appointment | Authenticated members users can view this page and book an appointment with a personal trainer | ![screenshot](documentation/features/book-appointment.png) |
+| Success message of created appointment | Authenticated mebmers users can see this message when they've created appointment. | ![screenshot](documentation/features/success-message-create-appointment.png) |
+| My appointments | Authenticated members users can view this page and mange their appointments | ![screenshot](documentation/features/my_appointments.png) |
+| Edit appointment | Authenticated members users can edit their appointment and receive the success message once the appointment is updated | ![screenshot](documentation/features/success-message-update-appointment.png) |
+| Delete appointment | Authenticated members users can delete their appointment and receive the success message once the appointment is deleted| ![screenshot](documentation/features/success-message-delete-appointment.png) |
+| Contact Us | Visitors and authenticated users can see this page and submit the form | ![screenshot](documentation/features/contact-us.png) |
+| Success message of submiting contact form | Visitors and authenticated users can see submit the form and receive success message| ![screenshot](documentation/features/success-message-contact-us-form.png) |
+| Footer | Users can see by who this site has been built and the social medias of the gym| ![screenshot](documentation/features/footer.png) |
+| Manage carousel | Gym admin can edit, delte and add new images to carousel from Django admin dashboard| ![screenshot](documentation/features/admin-carousel.png) |
+| Manage home text | Gym admin can edit, delte or add text to home text from Django admin dashboard | ![screenshot](documentation/features/admin-home-text.png) |
+| Manage Memberships  | Gym admin can edit, delete or add memberships from Django admin dashboard| ![screenshot](documentation/features/admin-membership.png) |
+| Manage Membership requests  | Gym admin can approve, deny or put on pending membership requests from Django admin dashboard| ![screenshot](documentation/features/admin-membership-requests.png) |
+| Manage Benefits  | Gym admin can edit, delete or add benefits from Django admin dashboard| ![screenshot](documentation/features/admin-benefits.png) |
+| View submitted contact forms  | Gym admin can view submitted contact forms from Django admin dashboard| ![screenshot](documentation/features/admin-view-contact-forms.png) |
+| Manage gym contacts | Gym admin can change gym contacts from Django admin dashboard| ![screenshot](documentation/features/admin-gym-contacts.png) |
+| Heroku Deployment | The site is fully deployed to Heroku, making it accessible online and easy to manage. | ![screenshot](documentation/features/heroku.png) |
+| 404 | The 404 error page will indicate when a user has navigated to a page that doesn't exist, replacing the default Heroku 404 page with one that ties into the site's look and feel. | ![screenshot](documentation/features/404.png) |
+
+### Future Features
+
+
+
+- **User Profiles**: Create personalized user profiles where authenticated users can view their user's information and edit this information.
+- **See the available hours of personal trainer**: Enable users to see the available slots of a personal trainer and book available slots.
+- **Email confirmation**: When user edit his account, book an ppointment, delte it or edit - her receives a mail.
+- **Online payment**: Enable users to pay memebership via site.
+- **Email Subscriptions**: Allow users to subscribe to receive email notifications for new posts, updates, or newsletters.
+- **Gym blog**: Provide the user to read articles about how to eat more healthy, workout tips etc.
+
 
