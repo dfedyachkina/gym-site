@@ -294,4 +294,31 @@ INSTALLED_APPS = [
 
 source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
 
+## Agile Development Process
+
+### GitHub Projects
+
+
+[GitHub Projects](https://www.github.com/dfedyachkina/gym-site/projects) served as an Agile tool for this project. Through it, EPICs, User Stories, issues/bugs, and Milestone tasks were planned, then subsequently tracked on a regular basis using the Kanban project board.
+
+![screenshot](documentation/gh-projects.png)
+
+### GitHub Issues
+
+[GitHub Issues](https://www.github.com/dfedyachkina/gym-site/issues) served as an another Agile tool. There, I managed my User Stories and Milestone tasks, and tracked any issues/bugs.
+
+| Link | Screenshot |
+| --- | --- |
+| [![GitHub issues](https://img.shields.io/github/issues/dfedyachkina/gym-site)](https://www.github.com/dfedyachkina/gym-site/issues) | ![screenshot](documentation/gh-issues-open.png) |
+| [![GitHub closed issues](https://img.shields.io/github/issues-closed/dfedyachkina/gym-site)](https://www.github.com/dfedyachkina/gym-site/issues?q=is%3Aissue+is%3Aclosed) | ![screenshot](documentation/gh-issues-closed.png) |
+
+### MoSCoW Prioritization
+
+I've decomposed my Epics into User Stories for prioritizing and implementing them. Using this approach, I was able to apply "MoSCow" prioritization and labels to my User Stories within the Issues tab.
+
+- **Must Have**: guaranteed to be delivered - required to Pass the project (*max ~60% of stories*)
+- **Should Have**: adds significant value, but not vital (*~20% of stories*)
+- **Could Have**: has small impact if left out (*the rest ~20% of stories*)
+- **Won't Have**: not a priority for this iteration - future features
+
 
