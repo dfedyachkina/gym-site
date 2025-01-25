@@ -42,8 +42,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ appointment_url }}">Book an appointment</a>
                     </li>
-                    {% endif %}
-                    {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'appointment_list' %}">My appointments</a>
                     </li>
