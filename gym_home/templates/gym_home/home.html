@@ -22,7 +22,7 @@
   {% if home_text %}
     <div class="container mt-4">
         <h2>{{ home_text.title }}</h2>
-        <p>{{ home_text.content | safe }}</p>
+        {{ home_text.content | safe }}
     </div>
 {% endif %}
 
