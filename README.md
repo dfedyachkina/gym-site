@@ -206,4 +206,92 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | [![badge](https://img.shields.io/badge/ChatGPT-grey?logo=openai&logoColor=75A99C)](https://chat.openai.com) | Help debug, troubleshoot, and explain things. |
 
 
+## Database Design
+
+### Data Model
+
+Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models. Understanding the relationships between different tables can save time later in the project.
+
+![screenshot](documentation/erd.png)
+
+
+I have used `Mermaid` to generate an interactive ERD of my project.
+
+```mermaid
+erDiagram
+    USER {
+        int id
+        string username
+        string email
+        string first_name
+        string last_name
+        choices gender
+        date date_of_birth
+        boolean is_member
+    }
+    MEMBERSHIP {
+        int id
+        string membership_type
+        date start_date
+        date end_date
+    }
+    MEMBERSHIPREQUEST {
+        int id
+        dateTime requested_on
+        string status
+    }
+    APPOINTMENT {
+        int id
+        dateTime appointment_date
+        choices gender
+        string note
+    }
+    CONTACTUS {
+        int id
+        string first_name
+        string last_name
+        string email
+        string phone_number
+        text message
+        dateTime submitted_on
+    }
+
+    USER ||--o| MEMBERSHIP: has
+    USER ||--o| MEMBERSHIPREQUEST: requests
+    USER ||--o| APPOINTMENT: schedules
+    USER ||--o| APPOINTMENT: conducts
+    USER ||--o| CONTACTUS: submits
+    MEMBERSHIPREQUEST ||--o| USER: belongs_to
+    APPOINTMENT ||--o| USER: for_member
+    APPOINTMENT ||--o| USER: for_trainer
+    CONTACTUS ||--o| USER: for_user
+```
+
+source: [Mermaid](https://mermaid.live/edit#pako:eNqNU8luwjAQ_RXLZ_gB3yiNVA4sJeFSRYqceEisxnbqRSoC_r1OEyAQCPjiWd7M88x49jhTDDDBoN85zTUVsUT-bMJgjfaNXB8uLeLsohurucyRM6AlFdBzgKC8vFhTpUqgEnGTCBAp6MZ1bK55MH8L1uHHbPUCZRNvCl4ldld1mBm14EFU26QWbxwgWcfcI14Hn5sgjIb46-iIC0AafhwYCyxRsvc8_wDrzBXLZLVazhbRPFi8lp9WlfJOAfK2kscc0-UimkyjTTjEYOHX-v4ZQ3O4w2tcKrjt1uWTd77D4TAeq0OnaQQV1AwB2q6SU8vugDvNIchkBTBXwjNcpiRz2b105z6QthzzaNJtQB1MUAqlkrlJrOqP7Aq4VfrqBw8CraZcnpCXCfVw9RbVIDzCArTfHOYX8n-OMbYF-PXCxIuM6u8Yx_LocdRZFe5khonVDkZYK5cXmGxpabzmqnqo7UKfrRWVX0qd9OMfJlc3gg)
+
+
+I have used `pygraphviz` and `django-extensions` to auto-generate an ERD.
+
+The steps taken were as follows:
+- In the terminal: `sudo apt update`
+- then: `sudo apt-get install python3-dev graphviz libgraphviz-dev pkg-config`
+- then type `Y` to proceed
+- then: `pip3 install django-extensions pygraphviz`
+- in my `settings.py` file, I added the following to my `INSTALLED_APPS`:
+```python
+INSTALLED_APPS = [
+    ...
+    'django_extensions',
+    ...
+]
+```
+- back in the terminal: `python3 manage.py graph_models -a -o erd.png`
+- drag the new `erd.png` file into my `documentation/` folder
+- removed `'django_extensions',` from my `INSTALLED_APPS`
+- finally, in the terminal: `pip3 uninstall django-extensions pygraphviz -y`
+
+![screenshot](documentation/advanced-erd.png)
+
+source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
+
 
