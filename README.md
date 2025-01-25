@@ -103,3 +103,25 @@ I used [coolors.co](https://coolors.co/080708-3772ff-df2935-fdca40-e6e8e6) to ge
 - [Newsreader](https://fonts.google.com/specimen/Newsreader?query=Newsreader) was used for the primary headers and titles.
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
+## User Stories
+
+
+| Target | Expectation | Outcome |
+| --- | --- | --- |
+| As a gym admin | I would like to change home page's content and change carousel images | so that I can share updated information with the users. |
+| As a gym admin | I would like to approve memebership's requests | so that I can manage who owes membership and has additional access to gym's sources and who doesn't. |
+| As a gym admin | I would like to change membership's plans | so that I can keep updated memeberships, benefits and prices. |
+| As a gym admin | I would like to change gym's contact on contact page | so that I can keep updated contacts of the gym. |
+| As a gym admin | I would like to have access to sent contact forms | so that I can contact the users which sent the contact form. |
+| As a registered user(members) | I would like to have access to book an appointment page | so that I can book an appointment with a personal trainer |
+| As a registered user(members)| I would like to have access to my appointment list | so that I can manage my appointments, edit them or delete. |
+| As a registered user(members) | I would like to request another memebership | so that I can change my membership. |
+| As a registered user(non-members) | I would like to request a memebership and receive a message that my request has been sent | so that I can be a member of the gym, have access to additional gym's sources and understand my request has been sent to the administrator. |
+| As a registered user | I would like to log out | so that I can easily sign out from the site. |
+| As a guest user | I would like to see information on home page | so that I can read about the gym and know updated information. |
+| As a guest user | I would like to access to memeberships | so that I can see what memeberships are offered by the gym. |
+| As a guest user | I would like to send contact us form and recieve a success message | so that I can understand the form has been sent and I would be contacted soon. |
+| As a guest user| I would like to register an account | so that I can request memebership and become a member. |
+| As a guest user | I would like to log in with exicted account | so that I can log in to my exicted account and have additional access. |
+
+
