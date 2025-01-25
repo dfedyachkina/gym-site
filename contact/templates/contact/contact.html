@@ -23,20 +23,18 @@
     <div class="col-lg-6 mx-auto">
       <h3 class="mb-3">Send Us a Message:</h3>
 
-
       <form method="POST">
         {% csrf_token %}
+        
         {% if user.is_authenticated %}
         <div class="mb-3">
           <label for="id_first_name" class="form-label">First Name</label>
-          <input type="text" name="first_name" id="id_first_name" class="form-control" value="{{ user.first_name }}"
-            readonly>
+          <input type="text" name="first_name" id="id_first_name" class="form-control" value="{{ user.first_name }}" readonly>
         </div>
 
         <div class="mb-3">
           <label for="id_last_name" class="form-label">Last Name</label>
-          <input type="text" name="last_name" id="id_last_name" class="form-control" value="{{ user.last_name }}"
-            readonly>
+          <input type="text" name="last_name" id="id_last_name" class="form-control" value="{{ user.last_name }}" readonly>
         </div>
 
         <div class="mb-3">
@@ -57,14 +55,19 @@
         <button type="submit" class="btn btn-primary w-100">Submit</button>
 
         {% else %}
-        <p class="mb-3">Already have an account? Please <a href="{{ login_url }}">log in</a> or <a
-            href="{{ signup_url }}">register</a>. Alternatively, you can continue without registration.</p>
-        {{ form.as_p }}
+        <div class="mb-3">
+          <p class="mb-3">Already have an account? Please <a href="{{ login_url }}">log in</a> or <a href="{{ signup_url }}">register</a>. Alternatively, you can continue without registration.</p>
+        </div>
+        
+        <div class="mb-3">
+          {{ form.as_p }}
+        </div>
+        
         <button type="submit" class="btn btn-primary w-100">Submit</button>
         {% endif %}
+      </form>
     </div>
   </div>
-  </form>
 </div>
 
 {% endblock content %}
