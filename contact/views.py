@@ -3,6 +3,7 @@ from django.contrib import messages
 from .forms import ContactForm
 from .models import GymContacts
 
+
 def contact(request):
     gym_contact = GymContacts.objects.first()
 
@@ -14,7 +15,7 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, "Your message has been submitted successfully!")
+            messages.success(request, "Your message has been submitted successfully!")  # noqa
             return redirect('contact')
         else:
             messages.error(request, "Error, please try again")
