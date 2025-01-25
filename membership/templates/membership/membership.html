@@ -10,11 +10,10 @@
                 <h5 class="card-title text-center text-capitalize">{{ membership.name }} membership </h5>
                 <p class="card-text">{{ membership.description | safe }}</p>
 
-                <p class="card-text"><strong>Benefits:</strong><br>
+                <p class="fw-bold">Benefits:</p><br>
                     {% for benefit in membership.benefits.all %}
                     {{ benefit.description | safe }}<br>
                     {% endfor %}
-                </p>
 
                 <p class="card-text">
                     Price: {{ membership.price }} euro/per month
@@ -36,13 +35,12 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Are you sure you want to request the <strong>{{ membership.name }}</strong> membership?
-                    <p>Price: {{ membership.price }} euro/month</p>
-                    <p><strong>Benefits:</strong><br>
+                    Are you sure you want to request the <p class="fw-bold">{{ membership.name }}</p> membership?<br>
+                    Price: {{ membership.price }} euro/month<br>
+                    <p class="fw-bold">Benefits:</p><br>
                         {% for benefit in membership.benefits.all %}
                         {{ benefit.description | safe }}<br>
                         {% endfor %}
-                    </p>
                 </div>
                 <div class="modal-footer">
                     <!-- Button to close the modal without action -->
