@@ -3,7 +3,7 @@
 /* Navbar */
 .navbar-brand {
     font-family: 'Newsreader', sans-serif;
-    font-style: bold;
+    font-weight: bold;
     text-shadow: 2px 1px 6px #0f6e0a;
     transition: text-shadow 0.3s ease;
     font-size: 1.8em;
