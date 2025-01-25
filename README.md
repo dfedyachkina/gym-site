@@ -512,3 +512,33 @@ By forking the GitHub Repository, you make a copy of the original repository on 
 
 There are no remaining major differences between the local version when compared to the deployed version online.
 
+## Credits
+
+
+### Content
+
+
+| Source | Notes |
+| --- | --- |
+| [Markdown Builder](https://markdown.2bn.dev) | Help generating Markdown files |
+| [I Think Therefore I Blog](https://codeinstitute.net) | Code Institute walkthrough project inspiration |
+| [Bootstrap](https://getbootstrap.com) | Various components / responsive front-end framework |
+| [Cloudinary API](https://cloudinary.com) | Cloud storage for static/media files |
+| [Whitenoise](https://whitenoise.readthedocs.io) | Static file service |
+| [Python Tutor](https://pythontutor.com) | Additional Python help |
+| [ChatGPT](https://chatgpt.com) | Help with code logic and explanations |
+
+### Media
+
+| Source | Notes |
+| --- | --- |
+| [favicon.io](https://favicon.io) | Generating the favicon |
+| [I Think Therefore I Blog](https://codeinstitute.net) | Sample images provided from the walkthrough projects |
+| [Font Awesome](https://fontawesome.com) | Icons used throughout the site |
+
+### Acknowledgements
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://www.github.com/TravelTimN) for the support throughout the development of this project.
+- I would like to thank the [Code Institute](https://codeinstitute.net) Tutor Team for their assistance with troubleshooting and debugging some project issues.
+- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and impostor syndrome.
+- I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
+
