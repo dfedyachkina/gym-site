@@ -33,7 +33,7 @@ ALLOWED_HOSTS = [
     '8000-dfedyachkina-gymsite-yval3q9d3zt.ws.codeinstitute-ide.net',
     '.herokuapp.com',
     '8001-dfedyachkina-gymsite-yval3q9d3zt.ws.codeinstitute-ide.net',
-    'ui.dev/amiresponsive?url=https://the-welness-hub-9673efabce1f.herokuapp.com'
+    'ui.dev/amiresponsive?url=https://the-welness-hub-9673efabce1f.herokuapp.com'  # noqa
 ]
 
 
@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'cloudinary_storage',
-    'cloudinary', 
+    'cloudinary',
     'contact',
     'gym_home',
     'accounts',
@@ -122,16 +122,16 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',    # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',  # noqa
     },
 ]
 
@@ -146,7 +146,6 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 ACCOUNT_FORMS = {
     'signup': 'accounts.forms.CustomSignupForm',
 }
-
 
 
 # Internationalization
