@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get("DEBUG", "false").lower() == "true"
 ALLOWED_HOSTS = [
     '8000-dfedyachkina-gymsite-yval3q9d3zt.ws.codeinstitute-ide.net',
-    # '.herokuapp.com',
+    '.herokuapp.com',
     '8001-dfedyachkina-gymsite-yval3q9d3zt.ws.codeinstitute-ide.net',
     'ui.dev/amiresponsive?url=https://the-welness-hub-9673efabce1f.herokuapp.com'  # noqa
 ]
@@ -61,7 +61,6 @@ INSTALLED_APPS = [
     'personal_trainer',
     'membership',
     'error',
-    'core',
 ]
 
 SITE_ID = 1
