@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DEBUG", False)
+DEBUG = os.environ.get("DEBUG", "false").lower() == "true"
 ALLOWED_HOSTS = [
     '8000-dfedyachkina-gymsite-yval3q9d3zt.ws.codeinstitute-ide.net',
     # '.herokuapp.com',
@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'personal_trainer',
     'membership',
     'error',
+    'core',
 ]
 
 SITE_ID = 1
